@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Static snapshot of the FutureX Overall leaderboard captured on 2026-09-03.">
+  <title>FutureX Overall Leaderboard — 2026-09-03</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #08101d;
+      --surface: #101a2b;
+      --surface-2: #17243a;
+      --line: #2a3952;
+      --text: #f2f6ff;
+      --muted: #9eacc2;
+      --accent: #77e2bd;
+      --gold: #ffd66b;
+      --silver: #d9e0eb;
+      --bronze: #e1a475;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 10% 0%, rgba(65, 118, 191, 0.19), transparent 38rem),
+        var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    main {
+      width: min(1180px, calc(100% - 32px));
+      margin: 48px auto;
+    }
+
+    header { margin-bottom: 24px; }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 750;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3.8rem);
+      letter-spacing: -0.05em;
+      line-height: 1;
+    }
+
+    .summary {
+      max-width: 780px;
+      margin: 16px 0 0;
+      color: var(--muted);
+    }
+
+    .snapshot-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      margin-top: 18px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    a { color: var(--accent); }
+
+    .table-shell {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(16, 26, 43, 0.94);
+      box-shadow: 0 22px 70px rgba(0, 0, 0, 0.28);
+    }
+
+    table {
+      width: 100%;
+      min-width: 940px;
+      border-collapse: collapse;
+      font-variant-numeric: tabular-nums;
+    }
+
+    caption {
+      padding: 15px 18px;
+      text-align: left;
+      color: var(--muted);
+      font-size: 0.84rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    th, td {
+      padding: 13px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--line);
+      white-space: nowrap;
+    }
+
+    th {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background: var(--surface-2);
+      color: #becae0;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    tbody tr:hover { background: rgba(119, 226, 189, 0.055); }
+    tbody tr:last-child td { border-bottom: 0; }
+
+    td:nth-child(1) { width: 82px; font-weight: 720; }
+    td:nth-child(2), td:nth-child(3) { font-weight: 620; }
+    td:nth-child(n+5) { text-align: right; }
+    th:nth-child(n+5) { text-align: right; }
+
+    tr:nth-child(1) td:first-child { color: var(--gold); }
+    tr:nth-child(2) td:first-child { color: var(--silver); }
+    tr:nth-child(3) td:first-child { color: var(--bronze); }
+
+    .submission {
+      display: inline-block;
+      padding: 3px 9px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: #cbd5e8;
+      font-size: 0.78rem;
+    }
+
+    footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 640px) {
+      main { width: min(100% - 20px, 1180px); margin: 28px auto; }
+      th, td { padding: 11px 12px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Static snapshot</p>
+      <h1>FutureX Overall Leaderboard</h1>
+      <p class="summary">Overall rankings use a sliding-window Bradley–Terry calculation across the latest eight weeks. An entry must have results in at least three of those weeks to be listed.</p>
+      <div class="snapshot-meta">
+        <span>Captured: <time datetime="2026-09-03T08:57:17+08:00">2026-09-03 08:57:17 CST</time></span>
+        <span>Rows: 13</span>
+        <span>Source: <a href="https://futurex.live/">futurex.live</a></span>
+      </div>
+    </header>
+
+    <div class="table-shell">
+      <table>
+        <caption>All models shown after expanding “View results for all models” on the Overall tab.</caption>
+        <thead>
+          <tr>
+            <th scope="col">Rank</th>
+            <th scope="col">Model</th>
+            <th scope="col">Framework</th>
+            <th scope="col">Submission Type</th>
+            <th scope="col">Avg Score</th>
+            <th scope="col">Peak Score</th>
+            <th scope="col">Weeks Evaluated</th>
+            <th scope="col">BT Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>🏅 #1</td><td>GLM-5.1</td><td>Branchus-beta</td><td><span class="submission">Self-Submitted</span></td><td>56.90</td><td>59.90</td><td>4</td><td>1.16</td></tr>
+          <tr><td>🥈 #2</td><td>Deepseek V4 Pro</td><td>JSearch_V1_S5</td><td><span class="submission">Self-Submitted</span></td><td>60.19</td><td>65.39</td><td>4</td><td>0.60</td></tr>
+          <tr><td>🥉 #3</td><td>claude-opus-5</td><td>X-Nevar</td><td><span class="submission">Self-Submitted</span></td><td>59.21</td><td>63.54</td><td>4</td><td>0.46</td></tr>
+          <tr><td>#4</td><td>Apodex-1.0-mini</td><td>Apodex-FutureFlow-alpha</td><td><span class="submission">Self-Submitted</span></td><td>55.27</td><td>63.07</td><td>7</td><td>0.37</td></tr>
+          <tr><td>#5</td><td>DeepSeek-V4-Pro</td><td>JSearch_V1_S1</td><td><span class="submission">Self-Submitted</span></td><td>58.01</td><td>59.24</td><td>4</td><td>0.32</td></tr>
+          <tr><td>#6</td><td>DeepSeek-V4-Pro</td><td>JSearch_V1_S2</td><td><span class="submission">Self-Submitted</span></td><td>57.87</td><td>59.69</td><td>4</td><td>0.31</td></tr>
+          <tr><td>#7</td><td>DeepSeek-V4-Pro</td><td>deerflow</td><td><span class="submission">Self-Submitted</span></td><td>56.50</td><td>59.97</td><td>5</td><td>0.30</td></tr>
+          <tr><td>#8</td><td>Qwen-3-A3B</td><td>MurMur</td><td><span class="submission">Self-Submitted</span></td><td>55.56</td><td>61.46</td><td>8</td><td>0.28</td></tr>
+          <tr><td>#9</td><td>DeepSeek-V4-Flash</td><td>MiroCorgi</td><td><span class="submission">Self-Submitted</span></td><td>55.54</td><td>63.01</td><td>8</td><td>0.24</td></tr>
+          <tr><td>#10</td><td>Kimi K3</td><td>OpenPredictor-preview</td><td><span class="submission">Self-Submitted</span></td><td>56.00</td><td>65.24</td><td>4</td><td>0.23</td></tr>
+          <tr><td>#11</td><td>claude_sonnet_4.6</td><td>H2O_AI_Super_Agent_v1.82</td><td><span class="submission">Self-Submitted</span></td><td>52.82</td><td>57.96</td><td>8</td><td>0.10</td></tr>
+          <tr><td>#12</td><td>GLM-5.2</td><td>DragonAgent-0727</td><td><span class="submission">Self-Submitted</span></td><td>44.99</td><td>51.49</td><td>4</td><td>0.01</td></tr>
+          <tr><td>#13</td><td>GLM-5.2</td><td>hybrid</td><td><span class="submission">Self-Submitted</span></td><td>41.16</td><td>46.36</td><td>4</td><td>0.00</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer>This file is a static capture for comparison and audit purposes; values do not update automatically.</footer>
+  </main>
+</body>
+</html>
