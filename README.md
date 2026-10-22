@@ -1,6 +1,6 @@
 <div align="center">
 
-# Evolving with Open Worlds: Towards Recursive Self-Improvement for Future Forecasting [![Paper](https://img.shields.io/badge/Paper-PDF-b31b1b.svg)](sn-article.pdf)
+# Evolving with Open Worlds: Towards Recursive Self-Improvement for Future Forecasting [![Paper](https://img.shields.io/badge/Paper-PDF-b31b1b.svg)](https://arxiv.org/abs/2610.29784)
 
 <!-- [![License](https://img.shields.io/badge/License-MIT-blue.svg)](#license) -->
 
